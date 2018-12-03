@@ -22,7 +22,7 @@ for i in range(20):
         true_label = train[it][2]
         pred_label = decision_unit(value)
         if (true_label != pred_label):
-            w1 = w1 + x1 * 0.5*true_label
-            w2 = w2 + x2 * 0.5*true_label
+            w1 = w1 + train[it][0] * 0.5*true_label
+            w2 = w2 + train[it][1] * 0.5*true_label
             b = b + 0.5*true_label
     print(w1,w2,b)
