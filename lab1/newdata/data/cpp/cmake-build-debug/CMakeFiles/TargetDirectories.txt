@@ -1,0 +1,3 @@
+/home/pyton/institute/neuro/lab1/newdata/data/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pyton/institute/neuro/lab1/newdata/data/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pyton/institute/neuro/lab1/newdata/data/cpp/cmake-build-debug/CMakeFiles/cpp.dir
