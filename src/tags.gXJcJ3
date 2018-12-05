@@ -1,0 +1,2 @@
+read_img	main.cpp	/^void read_img(char *name, int n)$/;"	f	typeref:typename:void
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
