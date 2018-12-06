@@ -1,3 +1,4 @@
+/*kohonen(self organised) maps - delevoped by SerhyPyton*/
 #include "opencv2/highgui/highgui.hpp"
 #include <iostream>
 #include <opencv2/opencv.hpp>

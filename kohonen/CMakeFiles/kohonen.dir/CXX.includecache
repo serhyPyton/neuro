@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/pyton/sources/neuro/kohonen_c/src/main.cpp
+/home/pyton/institute/neuro/git/neuro/kohonen/src/main.cpp
 opencv2/highgui/highgui.hpp
-/home/pyton/sources/neuro/kohonen_c/src/opencv2/highgui/highgui.hpp
+/home/pyton/institute/neuro/git/neuro/kohonen/src/opencv2/highgui/highgui.hpp
 iostream
 -
 opencv2/opencv.hpp
