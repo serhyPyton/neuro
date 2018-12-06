@@ -1,0 +1,3 @@
+/home/pyton/institute/neuro/git/neuro/hopfield/CMakeFiles/rebuild_cache.dir
+/home/pyton/institute/neuro/git/neuro/hopfield/CMakeFiles/hopfield.dir
+/home/pyton/institute/neuro/git/neuro/hopfield/CMakeFiles/edit_cache.dir
