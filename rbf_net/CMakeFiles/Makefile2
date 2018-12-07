@@ -59,45 +59,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pyton/sources/neuro/neuro/kohonen
+CMAKE_SOURCE_DIR = /home/pyton/sources/neuro/neuro/rbf_net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pyton/sources/neuro/neuro/kohonen
+CMAKE_BINARY_DIR = /home/pyton/sources/neuro/neuro/rbf_net
 
 #=============================================================================
-# Target rules for target CMakeFiles/kohonen.dir
+# Target rules for target CMakeFiles/hopfield.dir
 
 # All Build rule for target.
-CMakeFiles/kohonen.dir/all:
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/depend
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pyton/sources/neuro/neuro/kohonen/CMakeFiles --progress-num=1,2 "Built target kohonen"
-.PHONY : CMakeFiles/kohonen.dir/all
+CMakeFiles/hopfield.dir/all:
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/depend
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pyton/sources/neuro/neuro/rbf_net/CMakeFiles --progress-num=1,2 "Built target hopfield"
+.PHONY : CMakeFiles/hopfield.dir/all
 
 # Include target in all.
-all: CMakeFiles/kohonen.dir/all
+all: CMakeFiles/hopfield.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/kohonen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/kohonen/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/kohonen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/kohonen/CMakeFiles 0
-.PHONY : CMakeFiles/kohonen.dir/rule
+CMakeFiles/hopfield.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/rbf_net/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hopfield.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/rbf_net/CMakeFiles 0
+.PHONY : CMakeFiles/hopfield.dir/rule
 
 # Convenience name for target.
-kohonen: CMakeFiles/kohonen.dir/rule
+hopfield: CMakeFiles/hopfield.dir/rule
 
-.PHONY : kohonen
-
-# clean rule for target.
-CMakeFiles/kohonen.dir/clean:
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/clean
-.PHONY : CMakeFiles/kohonen.dir/clean
+.PHONY : hopfield
 
 # clean rule for target.
-clean: CMakeFiles/kohonen.dir/clean
+CMakeFiles/hopfield.dir/clean:
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/clean
+.PHONY : CMakeFiles/hopfield.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/hopfield.dir/clean
 
 .PHONY : clean
 

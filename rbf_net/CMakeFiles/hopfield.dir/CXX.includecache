@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pyton/sources/neuro/neuro/rbf_net/src/main.cpp
+iostream
+-
+read_csv.cpp
+/home/pyton/sources/neuro/neuro/rbf_net/src/read_csv.cpp
+
+/home/pyton/sources/neuro/neuro/rbf_net/src/read_csv.cpp
+vector
+-
+iostream
+-
+sstream
+-
+fstream
+-
+

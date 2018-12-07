@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pyton/sources/neuro/neuro/kohonen
+CMAKE_SOURCE_DIR = /home/pyton/sources/neuro/neuro/rbf_net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pyton/sources/neuro/neuro/kohonen
+CMAKE_BINARY_DIR = /home/pyton/sources/neuro/neuro/rbf_net
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/kohonen/CMakeFiles /home/pyton/sources/neuro/neuro/kohonen/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/rbf_net/CMakeFiles /home/pyton/sources/neuro/neuro/rbf_net/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/kohonen/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pyton/sources/neuro/neuro/rbf_net/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named kohonen
+# Target rules for targets named hopfield
 
 # Build rule for target.
-kohonen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kohonen
-.PHONY : kohonen
+hopfield: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hopfield
+.PHONY : hopfield
 
 # fast build rule for target.
-kohonen/fast:
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/build
-.PHONY : kohonen/fast
+hopfield/fast:
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/build
+.PHONY : hopfield/fast
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,7 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/kohonen.dir/build.make CMakeFiles/kohonen.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/hopfield.dir/build.make CMakeFiles/hopfield.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... kohonen"
+	@echo "... hopfield"
 	@echo "... edit_cache"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

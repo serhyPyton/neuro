@@ -12,6 +12,7 @@
 #include <iomanip>
 #include <random>
 #include <algorithm>
+#include <sstream>
 
 using namespace cv;
 using namespace std;
@@ -90,7 +91,7 @@ int main(int argc, char* argv[])
     }
     gen_rand(w);
 
-
+    //imwrite("intial_rand.png",w[1][1]);
     //find the nearest
     for(int tt=0;tt<50;tt++){
     for (int k=0;k<5;k++){
@@ -128,6 +129,7 @@ int main(int argc, char* argv[])
     }
 cout<<"n1 is related to ["<<y<<" , "<<x<<"]"<<endl;
         namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
+  //  imwrite("related_weight_1.png",w[y][x] );
     imshow( "Display window", w[y][x] );                   // Show our image inside it.
     waitKey(0);
 
@@ -146,9 +148,9 @@ cout<<"n1 is related to ["<<y<<" , "<<x<<"]"<<endl;
     }
 cout<<"c1 is related to ["<<y<<" , "<<x<<"]"<<endl;
         namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
+  //  imwrite("related_weight_2.png",w[y][x] );
     imshow( "Display window", w[y][x] );                   // Show our image inside it.
     waitKey(0);
-
 
 
 
@@ -156,6 +158,9 @@ cout<<"c1 is related to ["<<y<<" , "<<x<<"]"<<endl;
         for(int i=0;i<3;i++){
         namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
     imshow( "Display window", w[j][i] );                   // Show our image inside it.
+    stringstream ss;
+    ss<<"weight_"<<j<<"_"<<i<<".png";
+    imwrite(ss.str(),w[y][x] );
     waitKey(0);
         }
     }

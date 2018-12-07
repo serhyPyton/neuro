@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/pyton/institute/neuro/git/neuro/kohonen/src/main.cpp
+/home/pyton/sources/neuro/neuro/kohonen/src/main.cpp
 opencv2/highgui/highgui.hpp
-/home/pyton/institute/neuro/git/neuro/kohonen/src/opencv2/highgui/highgui.hpp
+/home/pyton/sources/neuro/neuro/kohonen/src/opencv2/highgui/highgui.hpp
 iostream
 -
 opencv2/opencv.hpp
@@ -32,5 +32,7 @@ iomanip
 random
 -
 algorithm
+-
+sstream
 -
 
