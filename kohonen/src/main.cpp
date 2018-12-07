@@ -65,7 +65,7 @@ void learn(vector<vector<Mat>>& w, Mat& pic, int y, int x, int tt){
     for(int t=0;t<3;t++){
     for (int j=0;j<128;j++){
         for(int i=0;i<128;i++){
-            w[k][t].at<uchar>(j,i)+=((int)pic.at<uchar>(j,i)-(int)w[k][t].at<uchar>(j,i))*dist(k, t, y, x)*(1./tt);
+            w[k][t].at<uchar>(j,i)+=((int)pic.at<uchar>(j,i)-(int)w[k][t].at<uchar>(j,i))*dist(k, t, y, x)*(100./(tt+0.1));
         }
     }
     }
@@ -160,7 +160,7 @@ cout<<"c1 is related to ["<<y<<" , "<<x<<"]"<<endl;
     imshow( "Display window", w[j][i] );                   // Show our image inside it.
     stringstream ss;
     ss<<"weight_"<<j<<"_"<<i<<".png";
-    imwrite(ss.str(),w[y][x] );
+    imwrite(ss.str(),w[j][i] );
     waitKey(0);
         }
     }

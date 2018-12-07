@@ -1,5 +1,6 @@
 #include <iostream>
 #include "read_csv.cpp"
+#include "k_means.cpp"
 
 using namespace std;
 
