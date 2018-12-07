@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/pyton/institute/neuro/git/neuro/hopfield/src/main.cpp
+/home/pyton/sources/neuro/neuro/hopfield/src/main.cpp
 opencv2/highgui/highgui.hpp
-/home/pyton/institute/neuro/git/neuro/hopfield/src/opencv2/highgui/highgui.hpp
+/home/pyton/sources/neuro/neuro/hopfield/src/opencv2/highgui/highgui.hpp
 iostream
 -
 opencv2/opencv.hpp
@@ -20,5 +20,7 @@ opencv2/imgproc.hpp
 vector
 -
 opencv2/imgproc/imgproc.hpp
+-
+sstream
 -
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pyton/institute/neuro/git/neuro/hopfield/src/main.cpp" "/home/pyton/institute/neuro/git/neuro/hopfield/CMakeFiles/hopfield.dir/src/main.cpp.o"
+  "/home/pyton/sources/neuro/neuro/hopfield/src/main.cpp" "/home/pyton/sources/neuro/neuro/hopfield/CMakeFiles/hopfield.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

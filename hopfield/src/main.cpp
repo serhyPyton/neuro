@@ -6,6 +6,7 @@
 #include <opencv2/imgproc.hpp>
 #include <vector>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <sstream>
 
 using namespace cv;
 using namespace std;
@@ -30,7 +31,7 @@ int read_img(char *name, int n, vector<Mat>& pic)
 }
 
 
-void classify(vector<vector<double>>& weight, vector<int>& pics, Mat& pic, vector<int>& out_pics){
+void classify(vector<vector<double>>& weight, vector<int>& pics, Mat& pic, vector<int>& out_pics, int t){
 for(int j=0;j<128*128;j++){
         int d=0;
         for(int i=0;i<128*128;i++){
@@ -52,6 +53,10 @@ for(int j=0;j<128*128;j++)
     imshow( "Display window", pic );                   // Show our image inside it.
     waitKey(0);
     cvDestroyWindow("Display window");
+    stringstream ss;
+    ss<<"weight_"<<t<<".png";
+    imwrite(ss.str(),pic );
+
 cout<<"second itter"<<endl;
 }
 
@@ -108,16 +113,16 @@ cout<<"norm"<<endl;
     //for pics not in learned sequence 5-th
 
 cout<<"::M"<<endl;
-classify(weight, pics[2], pic[2], out_pics[0]);
+classify(weight, pics[2], pic[2], out_pics[0], 0);
 cout<<"::N1"<<endl;
-classify(weight, pics[5], pic[5], out_pics[0]);
-classify(weight, pics[5], pic[5], out_pics[0]);
+classify(weight, pics[5], pic[5], out_pics[0], 1);
+classify(weight, pics[5], pic[5], out_pics[0], 2);
 cout<<"::C1"<<endl;
-classify(weight, pics[6], pic[6], out_pics[0]);
-classify(weight, pics[6], pic[6], out_pics[0]);
+classify(weight, pics[6], pic[6], out_pics[0], 3);
+classify(weight, pics[6], pic[6], out_pics[0], 4);
 cout<<"::C2"<<endl;
-classify(weight, pics[7], pic[7], out_pics[0]);
-classify(weight, pics[7], pic[7], out_pics[0]);
+classify(weight, pics[7], pic[7], out_pics[0], 5);
+classify(weight, pics[7], pic[7], out_pics[0], 6);
 
 
     return 0;

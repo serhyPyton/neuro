@@ -1,4 +1,4 @@
-# Install script for directory: /home/pyton/institute/neuro/git/neuro/hopfield
+# Install script for directory: /home/pyton/sources/neuro/neuro/hopfield
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pyton/institute/neuro/git/neuro/hopfield/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pyton/sources/neuro/neuro/hopfield/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
